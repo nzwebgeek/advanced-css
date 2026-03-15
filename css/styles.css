@@ -20,7 +20,7 @@ body{
         rgba(0,0,0,.6),
         rgba(0,0,0,.6)), 
        /* url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwZm9vdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;*/
-         url('img/css.jpg') no-repeat center center/cover;
+         url('../img/css.jpg') no-repeat center center/cover;
         background-position: top;
         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
         position: relative;
@@ -49,6 +49,7 @@ body{
 .heading-primary{
     color: #fff;
     text-transform: uppercase;
+    backface-visibility: hidden; /*hides the back of an element when it is not facing the screen*/
 
 }
 
@@ -57,17 +58,20 @@ body{
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+
     animation-name: moveInLeft; /*call animation*/
     animation-duration: 1s; /*set properties*/
     animation-timing-function: ease-out; /*speed of animation*/
-/*  animation-delay: 3s;*/ /*delay before animation starts*/
+
+    /*  animation-delay: 3s;*/ /*delay before animation starts*/
 /*  animation-iteration-count: 3;*/ /*number of times animation should run*/
+
 }
 
 .heading-primary-sub{
     display: block;
     font-size: 20px;
-    font-weight: 700px;
+    font-weight: 700;
     letter-spacing: 17.4px;
     animation: moveInRight 1s ease-out; /*call animation*/
 }
@@ -79,6 +83,20 @@ body{
     }
     80%{
         transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
     }
     100%{
         opacity: 1;

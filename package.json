@@ -1,24 +1,24 @@
 {
   "name": "advancedcss",
   "version": "1.0.0",
-  "description": "advanced css for learning",
-  "keywords": [
-    "css",
-    "advanced"
-  ],
-  "homepage": "https://github.com/nzwebgeek/advanced-css#readme",
-  "bugs": {
-    "url": "https://github.com/nzwebgeek/advanced-css/issues"
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nzwebgeek/advanced-css.git"
   },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "author": "mike f",
   "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/nzwebgeek/advanced-css/issues"
+  },
+  "homepage": "https://github.com/nzwebgeek/advanced-css#readme",
+  "devDependencies": {
+    "sass": "^1.98.0"
   }
 }

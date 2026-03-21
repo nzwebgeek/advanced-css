@@ -1,0 +1,36 @@
+/*SPECIFICITY*/
+/* 1. Inline styles (highest specificity) */
+/* 2. ID selectors */
+/* 3. Class selectors, attribute selectors, pseudo-classes */
+/* 4. Element selectors, pseudo-elements (lowest specificity) */
+/*put own style sheets later*/
+
+/*
+BLOCK VS INLINE ELEMENTS
+Block elements: take up the full width of their parent container, start on a new line ( div, p, h1-h6, ul, ol, li)
+Inline elements: only take up as much width as necessary, do not start on a new line ( span, a, img, strong, em)    
+
+BLOCK lEVEL ELEMENTS CAN CONTAIN INLINE ELEMENTS, BUT INLINE ELEMENTS CANNOT CONTAIN BLOCK LEVEL ELEMENTS
+
+Block-level boxes
+* Elements formatted visually as blocks
+* Always begin on a new line
+* Take up the full width available (stretches out to the left and right as far
+* 100% width of the parent element)
+* Examples: <p>, <div>, <h1> - <h6>, <ul>, <ol>, <li>
+Inline boxes
+* Elements formatted visually as inline
+* Do not begin on a new line
+* Take up only as much width as necessary
+* Examples: <span>, <a>, <img>, <strong>, <em>
+
+inline-block boxes
+* Elements formatted visually as inline-block
+* Do not begin on a new line
+* Take up only as much width as necessary
+* Examples: <label>, <input>, <button>
+
+inline-boxes can contain block-boxes, but block-boxes cannot contain inline-boxes
+
+
+*/

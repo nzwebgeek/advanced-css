@@ -20,6 +20,7 @@
 
         &--front{
             background-color: $color-white;
+            color: $color-grey-dark;
         }
         &--back{
             transform: rotateY(180deg);
@@ -140,9 +141,10 @@
     position: relative;
     top: 50%; // from parents element center point of the element 
     left: 50%;
-    transform: translate(0); // width of element / 2 = 50% of parent element
+    transform: translate(-50%, -50%); // width of element / 2 = 50% of parent element
     width: 100%;
     padding: 4rem;
+    text-align: center;
    }
 
    &__price-box {

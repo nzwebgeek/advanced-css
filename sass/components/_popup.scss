@@ -94,3 +94,11 @@
         }
     }   
 }
+
+ @include respond(tab-port){
+    .popup{
+        &__content{
+            width: 100%;
+        }
+    }
+ }

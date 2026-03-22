@@ -18,9 +18,18 @@
     }
 
     &__logo{
-        width: 15rem;
+        width: 10rem;
         height: auto;
     }
+
+    &__logo img{
+        @include respond(tab-port){
+            width: 20rem;
+        }
+    }
+
+
+    
 
     &__navigation{
         border-top: 1px solid $color-grey-dark;

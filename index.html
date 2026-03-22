@@ -63,9 +63,31 @@
             </div>
             <div class="col-1-of-2">
                 <div class="composition">
+
+                    <img srcset="img/cssa.jpg 30w, img/cssa.jpg 1000w" 
+                        alt="photo 1" 
+                        sizes="(max-width:56.35em) 20vw, (max-width:37.5em) 30vw, 18.75em" 
+                        class="composition__photo composition__photo--p1" 
+                        src="img/cssa.jpg">
+
+                     <img srcset="img/cssb.jpg 30w, img/cssb.jpg 1000w" 
+                        alt="photo 2" 
+                        sizes="(max-width:56.25em) 20vw, (max-width:600px) 30vw, 18.75em" 
+                        class="composition__photo composition__photo--p2" 
+                        src="img/cssb.jpg">
+
+                     <img srcset="img/cssc.jpg 30w, img/cssc.jpg 1000w" 
+                        alt="photo 3" 
+                        sizes="(max-width:56.25px) 20vw, (max-width:600px) 30vw, 18.75em" 
+                        class="composition__photo composition__photo--p3" 
+                        src="img/cssc.jpg">
+
+<!--
+                    
                     <img src="img/cssa.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
                     <img src="img/cssb.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
                     <img src="img/cssc.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
+-->
                 </div>
             </div>
         </div>
@@ -80,21 +102,26 @@
                 <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">HTML 5</h3>
                     <p class="feature-box__text">
-                    HTML5 introduces new semantic elements that provide meaning to the content, making it easier for search engines and other services to understand the structure of a web page                </div>
+                    HTML5 introduces new semantic elements that provide meaning to the content, making it easier for search engines and other services to understand the structure of a web page               
+                    </p>
+                 </div>
             </div>
              <div class="col-1-of-4">
                 <div class="feature-box">
                 <i class="feature-box__icon icon-basic-webpage"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Sass</h3>
                     <p class="feature-box__text">
-                    Sass (short for syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.                </div>
+                    Sass (short for syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.  
+                    </p>              
+                </div>
             </div>
              <div class="col-1-of-4">
                 <div class="feature-box">
                 <i class="feature-box__icon icon-basic-webpage"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Scss</h3>
                     <p class="feature-box__text">
-                    Getting started with SCSS - The CSS Preprocessor with ...SCSS (Sassy CSS) is a powerful, CSS-compatible preprocessor syntax for Sass that extends CSS with features like variables, nested rules, mixins, and functions. It uses .scss extensions, acts as a superset of CSS                </div>
+                    Getting started with SCSS - The CSS Preprocessor with ...SCSS (Sassy CSS) is a powerful, CSS-compatible preprocessor syntax for Sass that extends CSS with features like variables, nested rules, mixins, and functions. It uses .scss extensions, acts as a superset of CSS
+                    </p></div>
             </div>
              <div class="col-1-of-4">
                 <div class="feature-box">
@@ -122,7 +149,7 @@
                         &nbsp;
                         </div>
                         <h4 class="card__heading">
-                            <span class="car__heading-span card__heading-span--1">
+                            <span class="card__heading-span card__heading-span--1">
                                 CSS Architecture
                             </span>
                         </h4>
@@ -234,7 +261,7 @@
         <div class="row">
             <div class="glory">
                 <figure class="glory__shape">
-                    <img src="img//dev-1.jpg" alt="student" class="glory__img">
+                    <img src="img/dev-1.jpg" alt="student" class="glory__img">
                     <figcaption class="story__caption"> Jack Offerson</figcaption>
                 </figure>
                 <div class="glory__text">
@@ -308,9 +335,16 @@
 </main>
 
 <footer class="footer">
-    <div class="footer__logo-box">
-      <img src="img/css.png" alt="full logo" class="footer__logo">
-    </div>
+   <div class="footer__logo-box">
+    <picture class="footer__logo">
+        <source srcset="img/css.png 1x, img/css2xl.png 2x" media="(max-width: 37.5em)">
+        <img src="img/css.png" alt="Full logo">
+    </picture>
+</div>
+
+
+
+
     <div class="row">
         <div class="col-1-of-2">
             <div class="footer__navigation">
@@ -334,8 +368,24 @@
 <div class="popup" id="popup">
     <div class="popup__content">
         <div class="popup__left">
+            <img srcset="img/dev-4jpg 30w, img/cssa.jpg 1000w" 
+                        alt="photo 1" 
+                        sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px" 
+                        class="popup__img" 
+                        src="img/dev-4.jpg">
+
+                     <img srcset="img/cssb.jpg 30w, img/cssb.jpg 1000w" 
+                        alt="photo 2" 
+                        sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px" 
+                        class="popup__img" 
+                        src="img/dev-5.jpg">
+
+<!--
             <img src="img/dev-4.jpg" alt="Lessons" class="popup__img">
             <img src="img/dev-5.jpg" alt="Lessons" class="popup__img">
+
+ -->
+
         </div>
         <div class="popup__right">
             <a href="#section-tutorial" class="popup__close">&times;</a>
